@@ -19,6 +19,11 @@ namespace CSharpDatabaseAndTesting.DatabaseExamples
             {
                 SqlCommand command=new SqlCommand(statement, cnn);
                SqlDataReader reader = command.ExecuteReader();
+                Console.WriteLine(reader.FieldCount);
+                for (int x = 0; x < reader.FieldCount; x++)
+                { 
+                   Console.WriteLine("{0}------------------{1}",reader.GetName(x),reader.GetFieldType(x));
+                }
                 Console.WriteLine("    Sno             Name                     City");
                 Console.WriteLine("---------------------------------------------------------------------------- ");
                 while (reader.Read()) {
