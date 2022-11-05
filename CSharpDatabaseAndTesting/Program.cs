@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data.SqlClient;
 
 namespace CSharpDatabaseAndTesting
 {
@@ -6,7 +7,11 @@ namespace CSharpDatabaseAndTesting
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            string connetionString = null;
+            SqlConnection cnn;
+            connetionString = "Data Source=VINODHPC\\SQLEXPRESS;Initial Catalog=csharp;User ID=sa;Password=sqlserver";
+            cnn = new SqlConnection(connetionString);
+            Console.WriteLine(cnn.ToString());
         }
     }
 }
