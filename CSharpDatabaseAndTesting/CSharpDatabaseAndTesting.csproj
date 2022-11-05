@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <StartupObject>CSharpDatabaseAndTesting.DatabaseExamples.Prepared</StartupObject>
+    <StartupObject>CSharpDatabaseAndTesting.DatabaseExamples.PeopleReader</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
